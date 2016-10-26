@@ -17,7 +17,7 @@ class Ssss < Formula
 
   def install
     inreplace "Makefile" do |s|
-      # Compile with -DNOMLOCK to avoid warning on every run on macOS.
+      # Compile with -DNOMLOCK to avoid warning on every run on OS X.
       s.gsub! /\-W /, "-W -DNOMLOCK $(CFLAGS) $(LDFLAGS)"
     end
 

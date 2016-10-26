@@ -20,7 +20,7 @@ class Gspell < Formula
   depends_on "iso-codes"
   depends_on "vala" => :recommended
 
-  # ensures compilation on macOS
+  # ensures compilation on Mac OS X
   # submitted upstream as https://bugzilla.gnome.org/show_bug.cgi?id=759704
   patch :DATA
 

@@ -16,7 +16,7 @@ class Srecord < Formula
   depends_on "boost"
   depends_on "libgcrypt"
 
-  # Use macOS's pstopdf
+  # Use OS X's pstopdf
   patch :DATA
 
   def install

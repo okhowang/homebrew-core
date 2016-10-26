@@ -33,13 +33,13 @@ class PerconaXtrabackup < Formula
   end
 
   def install
-    cmake_args = %w[
+    cmake_args = %W[
       -DBUILD_CONFIG=xtrabackup_release
       -DCOMPILATION_COMMENT=Homebrew
     ]
 
     if build.with? "docs"
-      cmake_args.concat %w[
+      cmake_args.concat %W[
         -DWITH_MAN_PAGES=ON
         -DINSTALL_MANDIR=share/man
       ]

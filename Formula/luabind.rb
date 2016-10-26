@@ -50,7 +50,7 @@ class Luabind < Formula
   def install
     ENV["LUA_PATH"] = Formula["lua51"].opt_prefix
 
-    args = %w[release install]
+    args = %W[release install]
     if ENV.compiler == :clang
       args << "--toolset=clang"
     elsif ENV.compiler == :llvm

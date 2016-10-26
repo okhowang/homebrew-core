@@ -1,5 +1,5 @@
 class Dmd < Formula
-  desc "D programming language compiler for macOS"
+  desc "D programming language compiler for OS X"
   homepage "https://dlang.org/"
 
   stable do

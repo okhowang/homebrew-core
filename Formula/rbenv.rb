@@ -31,7 +31,7 @@ class Rbenv < Formula
       # Record exact git revision for `rbenv --version` output
       git_revision = `git rev-parse --short HEAD`.chomp
       inreplace "libexec/rbenv---version", /^(version=)"([^"]+)"/,
-                                           %Q(\\1"\\2-g#{git_revision}")
+                                           %(\\1"\\2-g#{git_revision}")
     end
 
     prefix.install ["bin", "completions", "libexec", "rbenv.d"]

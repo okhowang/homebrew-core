@@ -25,7 +25,7 @@ class Webkitgtk < Formula
   patch :DATA
 
   def install
-    extra_args = %w[
+    extra_args = %W[
       -DPORT=GTK
       -DENABLE_X11_TARGET=OFF
       -DENABLE_QUARTZ_TARGET=ON

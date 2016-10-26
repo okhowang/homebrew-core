@@ -1,4 +1,4 @@
-# This fork contains macOS patches.
+# This fork contains OS X patches.
 # Original project: https://github.com/roysjosh/xbee-comm
 
 class XbeeComm < Formula

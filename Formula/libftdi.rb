@@ -19,7 +19,7 @@ class Libftdi < Formula
   depends_on "boost" => :optional
   depends_on "confuse" => :optional
 
-  # Fix LINK_PYTHON_LIBRARY=OFF on macOS
+  # Fix LINK_PYTHON_LIBRARY=OFF on OS X
   # https://www.mail-archive.com/libftdi@developer.intra2net.com/msg03013.html
   patch :DATA
 

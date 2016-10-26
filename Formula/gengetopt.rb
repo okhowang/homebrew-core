@@ -26,7 +26,7 @@ class Gengetopt < Formula
     ggo = <<-EOS.undent
       package "homebrew"
       version "0.9.5"
-      purpose "The missing package manager for macOS"
+      purpose "The missing package manager for OS X"
 
       option "verbose" v "be verbose"
     EOS

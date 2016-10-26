@@ -27,7 +27,7 @@ class Asciidoc < Formula
     system "autoconf" if build.head?
     system "./configure", "--prefix=#{prefix}"
 
-    # otherwise macOS's xmllint bails out
+    # otherwise OS X's xmllint bails out
     inreplace "Makefile", "-f manpage", "-f manpage -L"
     system "make", "install"
     system "make", "docs"
